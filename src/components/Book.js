@@ -7,6 +7,7 @@ const Book = (props) => {
     <div>
       <h2>{title}</h2>
       <h4>{author}</h4>
+      <button type="button">Remove Book</button>
     </div>
 
   );

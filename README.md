@@ -1,27 +1,25 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+#  Book Store
 
-> Description the project.
+> The Bookstore is a website where the user can view a list of books, add a book by entering a title, an author, and a category, and remove a book.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, TailwindCSS, JavaScript
+- React / Redux
+- Linters:
+- Stylelint, ESLint
+
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+In progress
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
+This project was bootstrapped with Create React App.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -29,8 +27,12 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ### Install
+Have NodeJS installed and follow the next steps
 
 ### Usage
+
+    npm i for installing dev dependecies
+    npm run build or npm start to see the project
 
 ### Run tests
 
@@ -40,17 +42,10 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@maaloum](https://github.com/maaloum)
+- Twitter: [@twitterhandle](https://twitter.com/maaloum)
 
 ## 🤝 Contributing
 
@@ -64,9 +59,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
 
 ## 📝 License
 

@@ -5,18 +5,19 @@ import Book from './Book';
 const BookList = (props) => {
   const { books } = props;
   return (
-    <ul>
-      {books.map(({ id, title, author }) => (
-        <Book key={id} title={title} author={author} />
-      ))}
-    </ul>
+    <>
+      <ul>
+        {books.map(({ id, title, author }) => (
+          <Book key={id} id={id} title={title} author={author} />
+        ))}
+      </ul>
+    </>
   );
 };
-
 BookList.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
       title: PropTypes.string,
       author: PropTypes.string,
     }),

@@ -1,22 +1,39 @@
+import { v4 as uuid } from 'uuid';
 // Actions
 export const ADD_BOOK = 'ADD_BOOK';
 export const REMOVE_BOOK = 'REMOVE_BOOK';
 
 // state
 const initialState = {
-  books: [],
+  books: [
+    {
+      id: uuid(),
+      title: 'The Hunger Games',
+      author: 'Suzanne Collins',
+    },
+    {
+      id: uuid(),
+      title: 'Dune',
+      author: 'Frank Herbert',
+    },
+    {
+      id: uuid(),
+      title: 'Capital in the Twenty-First Century',
+      author: 'S. Piketty',
+    },
+
+  ],
 };
 
 // create actions
-
 export const addBook = (book) => ({
   type: ADD_BOOK,
-  playload: book,
+  payload: book,
 });
 
 export const removeBook = (book) => ({
   type: REMOVE_BOOK,
-  playload: book,
+  payload: book,
 });
 
 export default function booksReducer(state = initialState, action) {

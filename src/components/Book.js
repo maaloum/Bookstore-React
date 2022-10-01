@@ -29,11 +29,9 @@ const Book = (props) => {
           </div>
         </div>
         <div className="BookstoreBookLine">
-          <div className="Oval-2">
-            <div className="Rectangle-3" />
-          </div>
+          <div className="Oval-2" />
           <div className="pourcentage">
-            <span className="-Percent-Complete">64%</span>
+            <span className="-Percent-Complete">100%</span>
             <span className="Completed Text-Style-2">Completed</span>
           </div>
         </div>

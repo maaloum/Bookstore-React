@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../Styles/Header.css';
+import user from '../Styles/icon.png';
 
 const NavBar = () => {
   const links = [
@@ -20,7 +21,7 @@ const NavBar = () => {
         </ul>
       </nav>
       <div className="Oval">
-        <div className="Mask" />
+        <img src={user} alt="user" />
       </div>
 
     </div>

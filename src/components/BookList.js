@@ -7,8 +7,10 @@ const BookList = (props) => {
   return (
     <>
       <ul>
-        {books.map(({ id, title, author }) => (
-          <Book key={id} id={id} title={title} author={author} />
+        {books.map(({
+          id, title, author, category,
+        }) => (
+          <Book key={id} id={id} title={title} author={author} category={category} />
         ))}
       </ul>
     </>
@@ -20,6 +22,7 @@ BookList.propTypes = {
       id: PropTypes.string,
       title: PropTypes.string,
       author: PropTypes.string,
+      category: PropTypes.string,
     }),
   ).isRequired,
 };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/book';
+import '../Styles/form.css';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
@@ -35,9 +36,10 @@ const BookForm = () => {
 
   return (
     <>
-      <h3 style={{ marginTop: '2rem' }}>ADD NEW BOOK</h3>
+      <h3 className="title">ADD NEW BOOK</h3>
       <form onSubmit={handleSumbit} style={{ display: 'flex', gap: '2rem' }}>
         <input
+          className="BookstoreInput"
           type="text"
           value={title}
           placeholder="Title"
@@ -46,6 +48,7 @@ const BookForm = () => {
           required
         />
         <input
+          className="BookstoreAuthor"
           type="text"
           value={author}
           placeholder="Author"
@@ -54,6 +57,7 @@ const BookForm = () => {
           required
         />
         <select
+          className="BookstoreCategory"
           name="category"
           value={category}
           onChange={handleChange}
@@ -80,7 +84,7 @@ const BookForm = () => {
           <option value="True Crime">True Crime</option>
 
         </select>
-        <button type="submit">Add Book</button>
+        <button type="submit" className="submit">Add Book</button>
       </form>
     </>
   );

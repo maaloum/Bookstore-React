@@ -16,6 +16,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
+  cursor: pointer;
 }
 
 .panel-bg ul {
@@ -78,6 +79,7 @@
   position: absolute;
   top: 0.5rem;
   left: 0.7rem;
+  cursor: pointer;
 }
 
 .NavBar {

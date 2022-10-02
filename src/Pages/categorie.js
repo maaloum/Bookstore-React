@@ -1,11 +1,12 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { checkStatus } from '../redux/categorie/categories';
+import '../Styles/Category.css';
 
 const Categorie = () => {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className="category">
       <h1>Categorie</h1>
       <button
         type="button"
